@@ -1,0 +1,37 @@
+package oops_Concept;
+
+class ConsTest1
+{
+	int practiceHrs;
+	String result;
+	//initialisatin of these two variables with constructor. parameterized constructor is suitable for initialisation
+	public ConsTest1(int practiceHrs,String result)//datatype should be same variables names can be different. here we used same variable names
+	//parameterised constructor. a constructor with parameters
+	{
+		this.practiceHrs = practiceHrs;// output 9
+		this.result = result;// output job
+		//same variable Names. local variables and class level variables. by using this. keyword priority is given to class level variables
+	}
+//	public ConsTest1(int practiceHrs,String result)//datatype should be same variables names can be different. here we used same variable names
+//	{
+//		practiceHrs = practiceHrs;// output 0
+//		result = result;// output null
+//		//same variable Names. local variables and class level variables. always gives priority for local level variables
+//	}
+//	public ConsTest1(int pracHrs,String res)//datatype should be same variables names can be different
+//	{
+//		practiceHrs = pracHrs;//we can use this. keyword also. //output 0
+//		result = res;//we can use this. keyword also. //output  null
+//	}
+	public void print()
+	{
+		System.out.println(practiceHrs+"********"+result);
+	}
+}
+public class ConstructorParameterisedDemo {
+public static void main(String[] args) {
+	ConsTest1 consTest1 = new ConsTest1(9,"JOB");
+	consTest1.print();	//1output : 9********JOB // 2output : 0********null //3output  :  9********JOB
+
+}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  
+<parameter name="id" value="5"></parameter>
+  <parameter name="job" value="java with selenium"></parameter>
+    <classes>
+      <class name="selenium_core.Demo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
